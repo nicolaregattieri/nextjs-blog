@@ -13,8 +13,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi, I`m Nicola. I`m a front-end developer, specialized on making
-          e-commerce websites. contact me on{' '}
+          Hi, I`m a front-end developer, specialized on making e-commerce
+          websites. contact me on{' '}
           <a target="_blank" href="https://twitter.com/nicregattieri">
             Twitter
           </a>
