@@ -7,7 +7,13 @@ import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io';
 const name = 'Nicola Regattieri';
 export const siteTitle = 'NicDev.dev';
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div>
       <Head>
