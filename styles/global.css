@@ -1,11 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+  --moonlight-desaturated-gray: #7f85a3;
+  --moonlight-dark-blue: #3e68d7;
+  --moonlight-blue: #82aaff;
+  --moonlight-sky-blue: #65bcff;
+  --moonlight-cyan: #86e1fc;
+  --moonlight-red: #ff757f;
+  --moonlight-dark-red: #ff5370;
+  --moonlight-light-red: #ff98a4;
+  --moonlight-yellow: #ffc777;
+  --moonlight-orange: #ff966c;
+  --moonlight-dark-orange: #fc7b7b;
+  --moonlight-teal: #4fd6be;
+  --moonlight-green: #c3e88d;
+  --moonlight-purple: #c099ff;
+  --moonlight-pink: #fca7ea;
+  --moonlight-indigo: #7a88cf;
+  --moonlight-bright-cyan: #b4f9f8;
+
+  --moonlight-gray-10-alt: #bcc4d6;
+  --moonlight-gray-10: #c8d3f5;
+  --moonlight-gray-9: #b4c2f0;
+  --moonlight-gray-8: #a9b8e8;
+  --moonlight-gray-7: #828bb8;
+  --moonlight-gray-6: #444a73;
+  --moonlight-gray-5: #2f334d;
+  --moonlight-gray-4: #222436;
+  --moonlight-gray-3: #1e2030;
+  --moonlight-gray-2: #191a2a;
+  --moonlight-gray-1: #131421;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Alegreya', serif;
   line-height: 1.6;
   font-size: 18px;
+}
+body {
+  background-color: var(--moonlight-gray-5);
 }
 
 * {
@@ -13,12 +48,20 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: var(--moonlight-dark-blue);
   text-decoration: none;
+  font-weight: 500;
+}
+p {
+  color: var(--moonlight-gray-10-alt);
+}
+p.mainPageParagraph {
+  width: 50rem;
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--moonlight-indigo);
 }
 
 img {

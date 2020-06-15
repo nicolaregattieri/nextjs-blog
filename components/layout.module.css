@@ -1,5 +1,5 @@
 .container {
-  max-width: 36rem;
+  max-width: 70rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }
@@ -8,18 +8,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--moonlight-indigo);
 }
-
+.headerNav ul li a {
+  color: var(--moonlight-gray-10);
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+}
+.headerNav ul li {
+  list-style: none;
+  margin-left: 1rem;
+}
 .headerImage {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
+}
+.headerWrapper {
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.headerWrapper div,
+.headerWrapper nav {
+  /* flex: 1 1 33%; */
 }
 
 .headerHomeImage {
-  width: 8rem;
-  height: 8rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
 }
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.mainHeading {
+  color: var(--moonlight-gray-1);
+}
+
+.gitLogo:hover {
+  color: #fff;
 }
