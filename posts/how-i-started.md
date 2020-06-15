@@ -1,6 +1,6 @@
 ---
 title: 'How I started as a front-end developer'
-date: '2020-01-02'
+date: '2020-06-14'
 ---
 
 First of all, this post is based on my own life experiences and opinions about how I turned myself into a developer

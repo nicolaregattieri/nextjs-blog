@@ -2,9 +2,10 @@ import Head from 'next/head';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io';
 
 const name = 'Nicola Regattieri';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'NicDev.dev';
 
 export default function Layout({
   children,
@@ -14,13 +15,10 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Nicola Regattieri developer blog" />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -31,7 +29,82 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+        <div className={`${styles.headerWrapper} ${utilStyles.flexRowCenter}`}>
+          <div className={utilStyles.flex}>
+            <img
+              src="/images/profile.jpg"
+              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              alt={name}
+            />
+            <h1 className={`${utilStyles.headingXl} ${styles.mainHeading}`}>
+              {name}
+            </h1>
+          </div>
+
+          <nav className={`${styles.headerNav}`}>
+            <ul className={utilStyles.flexRowCenter}>
+              <li>
+                <Link href="/">
+                  <a>About</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Blog</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Projects</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Hobbies</a>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <nav className={`${styles.headerNav}`}>
+            <ul className={utilStyles.flexRowCenter}>
+              <li>
+                <Link href="/">
+                  <a>
+                    {' '}
+                    <IoLogoGithub
+                      size="1.3em"
+                      title="Github"
+                      className="gitLogo"
+                    />
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>
+                    <IoLogoTwitter
+                      size="1.3em"
+                      title="Twitter"
+                      className="twitterLogo"
+                    />
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>
+                    <IoLogoLinkedin
+                      size="1.3em"
+                      title="Linkedin"
+                      className="linkedinLogo"
+                    />
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        {/* {home ? (
           <>
             <img
               src="/images/profile.jpg"
@@ -57,9 +130,9 @@ export default function Layout({
               </Link>
             </h2>
           </>
-        )}
+        )} */}
       </header>
-      <main>{children}</main>
+      <main className={styles.container}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
