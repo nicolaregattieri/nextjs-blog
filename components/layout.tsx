@@ -66,7 +66,9 @@ export default function Layout({
             </ul>
           </nav>
           <nav className={`${styles.headerNav}`}>
-            <ul className={utilStyles.flexRowCenter}>
+            <ul
+              className={`${utilStyles.flexRowCenter}  ${utilStyles.flexEnd}`}
+            >
               <li>
                 <Link href="/">
                   <a>
@@ -74,7 +76,7 @@ export default function Layout({
                     <IoLogoGithub
                       size="1.3em"
                       title="Github"
-                      className="gitLogo"
+                      className={styles.gitLogo}
                     />
                   </a>
                 </Link>
@@ -85,7 +87,7 @@ export default function Layout({
                     <IoLogoTwitter
                       size="1.3em"
                       title="Twitter"
-                      className="twitterLogo"
+                      className={styles.twitterLogo}
                     />
                   </a>
                 </Link>
@@ -96,7 +98,7 @@ export default function Layout({
                     <IoLogoLinkedin
                       size="1.3em"
                       title="Linkedin"
-                      className="linkedinLogo"
+                      className={styles.linkedinLogo}
                     />
                   </a>
                 </Link>
