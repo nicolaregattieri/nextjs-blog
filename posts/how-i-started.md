@@ -1,7 +1,11 @@
 ---
 title: 'How I started as a front-end developer'
 date: '2020-06-14'
+image: 'images/macbook.png'
+alt: 'eu'
 ---
+
+![Screen recording of 1, 2, 3, 4, 5 logged in order](/images/exhaustive-deps.gif)
 
 First of all, this post is based on my own life experiences and opinions about how I turned myself into a developer
 
