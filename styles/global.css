@@ -68,3 +68,6 @@ img {
   max-width: 100%;
   display: block;
 }
+.blogListImage {
+  max-width: 300px;
+}
